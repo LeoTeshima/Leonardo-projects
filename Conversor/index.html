@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Conversor de moedas</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+    <form>
+        <fieldset>
+            <header>
+                <h1 class="title">Conversor de moedas</h1>
+            </header>
+
+            <div class="coin-container">
+                <label for="coin">Selecione a moeda</label>
+                <select name="coin" id="coin" class="coin">
+                    <option value="dolar_a">Dólar americano</option>
+                    <option value="dolar_c">Dólar canadense</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+
+            <div class="value-input">
+                <label for="">Valor a ser convertido (R$)</label>
+                <input type="text" id="value-input">
+            </div>
+
+            <div class="buttons">
+                <button type="button" class="main-btn" onclick="calc();">Converter</button>
+                <button type="submit" class="reset-btn">Limpar</button>
+            </div>
+            <div class="result">
+                <label for="">Valor convertido: </label>
+                <span id="final-value" class="final-value"></span>
+            </div>
+        </fieldset>
+    </form>
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
