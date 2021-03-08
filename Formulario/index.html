@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preencha o Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animates.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form method="post" action="#" onSubmit="return validate();">
+        <fieldset>
+            <h1>Preencha o Formulário</h1> <br />
+
+            <div class="form-name">
+                <label for="name">Nome completo</label>
+                <input type="text" name="name" id="name" >
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="form-position">
+                <label class="label-primary">Qual posição você prefere jogar?</label> <br />
+                <label>
+                    <input type="radio" name="position" value="goleiro"> Goleiro
+                </label>
+                <label>
+                    <input type="radio" name="position" value="fixo"> Fixo
+                </label>
+                <label>
+
+                    <input type="radio" name="position" value="ala"> Ala
+                </label>
+                <label>
+                    <input type="radio" name="position" value="pivo"> Pivô
+                </label>
+            </div>
+
+            <div class="form-category">
+                <label>Categoria</label>
+                <select id="category" >
+                    <option selected value="" disabled>Selecione a categoria</option>
+                    <option>Sub-7</option>
+                    <option>Sub-9</option>
+                    <option>Sub-11</option>
+                    <option>Sub-13</option>
+                    <option>Sub-15</option>
+                    <option>Sub-17</option>
+                </select>
+            </div>
+
+            <div class="form-info">
+                <p>Escreva um pouco sobre o interesse em treinar e se possivel, um pouco das qualidades em quadra
+                </p>
+                <textarea name="information" id="information" rows="6">
+                </textarea>
+            </div>
+
+            <button type="submit">Enviar formulário</button>
+        </fieldset>
+    </form>
+
+    <script src="validate.js"></script>
+</body>
+
+</html>
